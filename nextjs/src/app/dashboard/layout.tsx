@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState, type ReactNode } from "react";
 
 interface DashboardLayoutProps {
@@ -9,6 +10,7 @@ interface DashboardLayoutProps {
 
 export default function DashboardLayout({ children }: DashboardLayoutProps) {
   const [text, setText] = useState("");
+  const router = useRouter();
 
   return (
     <div className="flex flex-row min-h-[calc(100vh-2rem)] border-4 border-blue-500 rounded-xl m-4 overflow-hiddent">
@@ -33,6 +35,10 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
             {" "}
             Настройки{" "}
           </Link>
+          <button onClick={() => router.push('/')} className="hover:text-red-600 transition-colors">
+            {" "}
+            Выйти{" "}
+          </button>
         </nav>
 
         <div className="mt-auto pt-6 border-t border-blue-200">
