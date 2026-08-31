@@ -13,7 +13,7 @@ export default function NotFound() {
       </p>
       <Link
         href="/dashboard"
-        className="px-6 py-3 bg-block text-white rounded-full font-medium hover:bg-zink-800 transaction-all"
+        className="px-6 py-3 bg-zinc-800 text-white rounded-full font-medium hover:bg-zinc-500 transition-all"
       >
         Вернуться на главную
       </Link>
