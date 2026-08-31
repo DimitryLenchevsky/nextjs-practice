@@ -5,7 +5,8 @@ interface ShopPageProps {
 export default async function ShopPage({ params }: ShopPageProps) {
   const { slug } = await params;
 
-  const [category, brand, model] = slug;
+  const currentSlug = slug || [];
+  const [category, brand, model] = currentSlug;
 
   return (
     <div>
