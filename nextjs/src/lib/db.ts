@@ -1,11 +1,10 @@
 import "server-only";
 
 const MOCK_USERS = [
-  { id: 1, name: "Артем", email: "artem@gmail.com" },
-  { id: 2, name: "Арина", email: "aryna@gmail.com" },
-  { id: 3, name: "Никита", email: "nikita@gmail.com" },
-  { id: 4, name: "Дима", email: "dima@gmail.com" },
-  { id: 5, name: "Света", email: "sveta@gmail.com" },
+  { id: 1, name: "Максим Корхов", email: "maxim@gmail.com" },
+  { id: 2, name: "Давид Тсофин", email: "david@gmail.com" },
+  { id: 3, name: "Дима Карпик", email: "dima@gmail.com" },
+  { id: 4, name: "Хардик Хардиков", email: "hardick@gmail.com" },
 ];
 
 export const db = {
